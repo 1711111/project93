@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+           body
+           {
+           background-color: #baf0e6;
+           }
+           #login_div{
+            background: rgba(255,255,255,0.8);float: none;border-radius: 15px;
+            border-width: 2px;
+            border-color: black;
+            margin: 10%;
+            padding-bottom: 10px;
+           }    
+
+        </style>
+        <script src="kwitter.js"></script>
+    </head>
+    <body>
+      <center>
+        <div id="login_div" class="col-lg-4 col-md-6 col-sm-6 col-xs-11 ">
+            
+            <img src="Logo.png" class="profile img-circle" style="width: 80px;margin-top: 30px;border-radius: 40px;">
+            <h3>See what is happening in the world right now</h3>
+		    <h4>Join Kwitter today</h4>
+            <label style="margin-right: 5px;;">User name: </label><input placeholder="Enter your display name" type="text" id="user_name" onmouseover="inputHover()" class="form-control">
+            <br>
+            <button id="next_page" class="btn" style="color: white; width: 90%; background-color: #576d69;" onclick="addUser()">Next</button>
+        </div>
+      </center>
+      <footer class="container-fluid text-left" style="background-color: #293533; margin-top: 20%;">
+        <a href="Terms and conditions.pdf"><h4 onmouseover="Under()" style="color: grey" id="tc" onmouseleave="Leave()">Terms and Conditions</h4></a>
+      </footer>
+    </body>
+
+</html>
